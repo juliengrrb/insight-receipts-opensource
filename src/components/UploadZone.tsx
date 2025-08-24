@@ -19,7 +19,7 @@ interface UploadedFile {
   imageUrl?: string;
 }
 
-const WEBHOOK_URL = "https://n8n.srv892002.hstgr.cloud/webhook/10b8c494-a10e-4147-a1f4-639da8742e75";
+const WEBHOOK_URL = import.meta.env.VITE_N8N_WEBHOOK_URL!;
 
 export const UploadZone = () => {
   const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
