@@ -65,7 +65,8 @@ export const PremiumUploadZone = ({ onUploadComplete, onUploadStart }: PremiumUp
       timestamp: new Date().toISOString(),
     };
 
-    const response = await fetch('https://n8n.srv892002.hstgr.cloud/webhook/10b8c494-a10e-4147-a1f4-639da8742e75', {
+    const webhookUrl = import.meta.env.VITE_N8N_WEBHOOK_URL!;
+    const response = await fetch(webhookUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
