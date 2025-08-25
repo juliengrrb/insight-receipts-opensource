@@ -1,10 +1,3 @@
-Je comprends 👍 Là, ton README apparaît comme un **gros bloc de code** au lieu d’un vrai document avec titres, paragraphes et blocs de code séparés.
-Le problème vient du fait que tu avais mis ton texte entier **entre balises `markdown ... `**, ce qui le rend monolithique.
-
-👉 La solution : écrire ton README directement en **Markdown brut** (sans le bloquer dans un seul `markdown`), en utilisant des titres (`#`, `##`), du gras (`**texte**`), et des blocs de code uniquement pour les commandes.
-
-Voici la version corrigée et jolie, qui s’affichera correctement sur GitHub :
-
 ---
 
 # 🚀 Insight Receipts - Gestionnaire de Factures Open Source
