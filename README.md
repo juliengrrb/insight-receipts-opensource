@@ -1,73 +1,160 @@
-# Welcome to your Lovable project
+🚀 Insight Receipts - Projet Open Source
 
-## Project info
+Bienvenue ! Insight Receipts est une application web conçue pour simplifier la gestion de vos factures. Ce projet est open-source, ce qui signifie que vous pouvez le prendre, le modifier et l'adapter à vos propres besoins.
 
-**URL**: https://lovable.dev/projects/be6c1f41-4d13-4362-b71b-d96ac00fab83
+Ce guide a été spécialement conçu pour vous aider à déployer et à vous approprier ce projet en utilisant la plateforme de développement Lovable.
 
-## How can I edit this code?
+Notre Stratégie : Comment faire fonctionner ce projet sur Lovable ?
+💡 Pourquoi cette méthode ?
 
-There are several ways of editing your application.
+La plateforme Lovable est fantastique pour développer rapidement, mais pour l'instant, elle ne permet pas d'importer directement un projet qui existe déjà sur GitHub.
 
-**Use Lovable**
+Notre plan est donc simple et efficace :
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/be6c1f41-4d13-4362-b71b-d96ac00fab83) and start prompting.
+Nous allons demander à Lovable de créer un nouveau projet vide pour nous.
 
-Changes made via Lovable will be committed automatically to this repo.
+Ensuite, nous allons remplacer le contenu de ce projet vide par le code de Insight Receipts.
 
-**Use your preferred IDE**
+Enfin, nous effectuerons une petite configuration finale pour que tout soit parfaitement fonctionnel.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Suivez les étapes ci-dessous, et votre application sera en ligne en quelques minutes !
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+✅ Prérequis
 
-Follow these steps:
+Avant de plonger dans le code, assurez-vous d'avoir :
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+💻 Un terminal avec Git et NPM installés.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🐙 Un compte GitHub.
 
-# Step 3: Install the necessary dependencies.
-npm i
+✨ Un compte Lovable.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Guide de Déploiement : Pas à Pas
+Étape 1 : Créer la "Coquille Vide" sur Lovable
 
-**Edit a file directly in GitHub**
+L'objectif ici est de laisser Lovable préparer un nouvel espace de travail pour nous sur GitHub.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Connectez-vous à votre compte Lovable et créez un nouveau projet vierge.
 
-**Use GitHub Codespaces**
+Dans l'éditeur, suivez la procédure pour connecter ce projet à votre compte GitHub. Lovable va alors créer un nouveau dépôt sur votre GitHub.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Une fois le dépôt créé, rendez-vous sur sa page GitHub. Cliquez sur le bouton vert <> Code et copiez l'URL HTTPS. Gardez-la précieusement !
 
-## What technologies are used for this project?
+✅ Résultat attendu : Vous avez l'URL d'un nouveau dépôt GitHub, prêt à accueillir notre code.
 
-This project is built with:
+Étape 2 : Télécharger les Projets sur Votre Ordinateur
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Maintenant, nous allons rapatrier les deux dépôts (le projet original et votre nouvelle coquille vide) sur votre machine.
 
-## How can I deploy this project?
+code
+Bash
+download
+content_copy
+expand_less
 
-Simply open [Lovable](https://lovable.dev/projects/be6c1f41-4d13-4362-b71b-d96ac00fab83) and click on Share -> Publish.
+# 1. Clonez ce projet (Insight Receipts) dans un dossier nommé "projet_original"
+git clone https://github.com/juliengrrb/insight-receipts-opensource.git projet_original
 
-## Can I connect a custom domain to my Lovable project?
+# 2. Clonez votre nouveau dépôt créé par Lovable dans un dossier nommé "nouveau_projet_lovable"
+# !!! ATTENTION : REMPLACEZ L'URL CI-DESSOUS PAR CELLE QUE VOUS VENEZ DE COPIER !!!
+git clone [URL_DE_VOTRE_NOUVEAU_DEPOT_LOVABLE] nouveau_projet_lovable
 
-Yes, you can!
+✅ Résultat attendu : Vous avez deux dossiers sur votre ordinateur : projet_original et nouveau_projet_lovable.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Étape 3 : Remplir la Coquille avec le Bon Code
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Il est temps de transférer le code d'Insight Receipts dans votre nouveau projet.
+
+code
+Bash
+download
+content_copy
+expand_less
+IGNORE_WHEN_COPYING_START
+IGNORE_WHEN_COPYING_END
+# 1. Entrez dans le dossier de votre nouveau projet
+cd nouveau_projet_lovable
+
+# 2. Supprimez absolument TOUT le contenu initial (fichiers et historique Git)
+# C'est une étape cruciale pour garantir un démarrage propre.
+rm -rf ./* .git
+
+# 3. Copiez tout le contenu du projet original dans le dossier où vous vous trouvez
+cp -a ../projet_original/. .
+
+✅ Résultat attendu : Votre dossier nouveau_projet_lovable contient maintenant une copie parfaite du code d'Insight Receipts.
+
+Étape 4 : Envoyer le Code sur Votre GitHub
+
+Votre projet est prêt localement. Envoyons-le maintenant sur votre dépôt GitHub pour que Lovable puisse le voir.
+
+code
+Bash
+download
+content_copy
+expand_less
+IGNORE_WHEN_COPYING_START
+IGNORE_WHEN_COPYING_END
+# 1. Initialisez un nouveau dépôt Git propre
+git init
+
+# 2. Ajoutez tous les fichiers du projet pour que Git les suive
+git add .
+
+# 3. Créez un "commit" : un instantané de votre projet avec un message descriptif
+git commit -m "Initialisation du projet avec le code Insight Receipts"
+
+# 4. Liez votre dossier local au dépôt distant sur GitHub
+# !!! ATTENTION : REMPLACEZ L'URL CI-DESSOUS PAR CELLE DE VOTRE NOUVEAU DEPOT !!!
+git remote add origin [URL_DE_VOTRE_NOUVEAU_DEPOT_LOVABLE]
+
+# 5. Renommez la branche par défaut en "main", le standard actuel
+git branch -m master main
+
+# 6. Envoyez tous vos fichiers vers GitHub.
+git push -u -f origin main
+⚠️ Une note sur git push -f (Force Push)
+
+Nous utilisons l'option -f pour forcer le remplacement du projet vide sur GitHub par notre nouvelle version. C'est une opération sûre et nécessaire uniquement dans ce cas précis, car nous remplaçons un contenu sans historique.
+
+✅ Résultat attendu : Votre dépôt GitHub est maintenant à jour avec tout le code d'Insight Receipts.
+
+Étape 5 : La Touche Finale pour Lovable
+
+Votre code est en ligne, mais Lovable a besoin d'un dernier fichier pour savoir comment installer les dépendances du projet : le fameux package-lock.json.
+
+code
+Bash
+download
+content_copy
+expand_less
+IGNORE_WHEN_COPYING_START
+IGNORE_WHEN_COPYING_END
+# 1. Générez le fichier lock. Cette commande lit votre package.json et fait le reste.
+npm install
+
+# 2. Ajoutez ce nouveau fichier crucial à Git
+git add package-lock.json
+
+# 3. Créez un commit pour enregistrer ce changement
+git commit -m "Ajout du fichier package-lock.json pour Lovable"
+
+# 4. Envoyez cette dernière modification sur GitHub
+git push origin main
+🎉 Mission Accomplie !
+
+Félicitations ! Vous avez terminé la partie technique.
+
+Retournez sur la page de votre projet dans Lovable et rafraîchissez la page. L'application va se construire et se lancer correctement.
+
+ACTION REQUISE : Configurez Vos Clés d'API !
+
+Pour que l'application soit pleinement fonctionnelle, vous devez ajouter vos clés personnelles :
+
+URL et clé publique de Supabase
+
+URL de votre webhook N8N
+
+Rendez-vous dans les paramètres de votre projet sur Lovable et ajoutez ces informations dans la section "Secrets" ou "Variables d'environnement".
+
+Bon développement
