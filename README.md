@@ -62,21 +62,19 @@ git clone https://github.com/juliengrrb/insight-receipts-opensource.git projet_o
 # !!! ATTENTION : REMPLACEZ L'URL CI-DESSOUS PAR CELLE QUE VOUS VENEZ DE COPIER !!!
 git clone [URL_DE_VOTRE_NOUVEAU_DEPOT_LOVABLE] nouveau_projet_lovable
 
-Vous avez mille fois raison ! Je m'excuse, en regardant vos captures d'écran, je vois que mon code précédent a été mal interprété et a affiché le texte brut du Markdown (**, ##, etc.) au lieu du joli résultat final. C'est frustrant et ce n'est pas du tout le but.
+Vous avez mille fois raison ! Je m'excuse, en regardant vos captures d'écran, je vois que mon code précédent a été mal interprété et a affiché le texte brut du Markdown (`**`, `##`, etc.) au lieu du joli résultat final. C'est frustrant et ce n'est pas du tout le but.
 
 Oublions complètement les versions précédentes.
 
-Le problème vient de la manière dont le texte a été formaté. Nous allons le refaire de la manière la plus simple et la plus propre possible, en utilisant uniquement du Markdown pur et valide que GitHub saura interpréter parfaitement.
+Le problème vient de la manière dont le texte a été formaté. Nous allons le refaire de la manière la plus simple et la plus propre possible, en utilisant **uniquement du Markdown pur et valide** que GitHub saura interpréter parfaitement.
 
-Voici le code final et corrigé. Quand vous le collerez dans le fichier README.md sur GitHub, il s'affichera exactement comme les parties réussies de vos captures d'écran.
+**Voici le code final et corrigé.** Quand vous le collerez dans le fichier `README.md` sur GitHub, il s'affichera **exactement** comme les parties réussies de vos captures d'écran.
 
-✅ COPIEZ TOUT LE TEXTE CI-DESSOUS (ET RIEN QUE CE TEXTE)
-code
-Markdown
-download
-content_copy
-expand_less
+---
 
+### ✅ COPIEZ TOUT LE TEXTE CI-DESSOUS (ET RIEN QUE CE TEXTE)
+
+```markdown
 # 🚀 Insight Receipts - Gestionnaire de Factures Open Source
 
 Bienvenue sur **Insight Receipts**, une application web conçue pour simplifier l'upload, l'analyse et la gestion de vos factures. Ce projet est entièrement open-source : prenez-le, modifiez-le et adaptez-le à vos propres besoins !
@@ -133,14 +131,11 @@ git clone https://github.com/juliengrrb/insight-receipts-opensource.git projet_o
 # 2. Clonez votre nouveau dépôt créé par Lovable
 # !!! REMPLACEZ L'URL CI-DESSOUS PAR CELLE QUE VOUS VENEZ DE COPIER !!!
 git clone [URL_DE_VOTRE_NOUVEAU_DEPOT_LOVABLE] nouveau_projet_lovable
-Étape 3 : Remplir la Coquille avec le Bon Code
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+```
+
+### Étape 3 : Remplir la Coquille avec le Bon Code
+
+```bash
 # 1. Entrez dans le dossier de votre nouveau projet
 cd nouveau_projet_lovable
 
@@ -149,14 +144,11 @@ rm -rf ./* .git
 
 # 3. Copiez tout le contenu du projet original dans le dossier où vous vous trouvez
 cp -a ../projet_original/. .
-Étape 4 : Envoyer le Code sur Votre GitHub
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+```
+
+### Étape 4 : Envoyer le Code sur Votre GitHub
+
+```bash
 # 1. Initialisez un nouveau dépôt Git propre
 git init
 
@@ -175,18 +167,14 @@ git branch -m master main
 
 # 6. Envoyez tous vos fichiers vers GitHub
 git push -u -f origin main
-⚠️ Note sur git push -f (Force Push)
+```
 
-Nous utilisons l'option -f pour forcer le remplacement du projet vide sur GitHub par notre nouvelle version. C'est une opération sûre et nécessaire uniquement dans ce cas précis.
+> #### ⚠️ **Note sur `git push -f` (Force Push)**
+> Nous utilisons l'option `-f` pour forcer le remplacement du projet vide sur GitHub par notre nouvelle version. C'est une opération sûre et nécessaire **uniquement dans ce cas précis**.
 
-Étape 5 : La Touche Finale pour Lovable
-code
-Bash
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+### Étape 5 : La Touche Finale pour Lovable
+
+```bash
 # 1. Générez le fichier package-lock.json
 npm install
 
@@ -198,39 +186,33 @@ git commit -m "Ajout du fichier package-lock.json pour Lovable"
 
 # 4. Envoyez cette dernière modification sur GitHub
 git push origin main
-🎉 Mission Accomplie !
+```
+
+---
+
+## 🎉 Mission Accomplie !
 
 Félicitations ! Votre projet est maintenant prêt sur Lovable.
 
-ACTION REQUISE : Configurez Vos Clés d'API !
+### **ACTION REQUISE :** Configurez Vos Clés d'API !
 
-Pour que l'application soit pleinement fonctionnelle, vous devez ajouter vos clés personnelles dans les "Secrets" de votre projet Lovable.
+Pour que l'application soit pleinement fonctionnelle, vous devez ajouter vos clés personnelles dans les **"Secrets"** de votre projet Lovable.
 
-code
-Ini
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+```ini
 # Clés pour la connexion à Supabase
 VITE_SUPABASE_URL=VOTRE_URL_SUPABASE
 VITE_SUPABASE_ANON_KEY=VOTRE_CLE_PUBLIQUE_SUPABASE
 
 # Webhook pour les workflows N8N
 VITE_N8N_WEBHOOK_URL=VOTRE_URL_WEBHOOK_N8N
-🤝 Contribution
+```
+
+## 🤝 Contribution
 
 Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, n'hésitez pas à forker le dépôt et à soumettre une Pull Request.
 
-📄 Licence
+## 📄 Licence
 
 Ce projet est distribué sous la Licence MIT.
 
-code
-Code
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
+```
