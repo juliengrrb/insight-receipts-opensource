@@ -1,3 +1,4 @@
+
 ---
 
 # 🚀 Insight Receipts - Gestionnaire de Factures Open Source
