@@ -7,7 +7,8 @@ Bienvenue sur **Insight Receipts**, une application web conçue pour simplifier 
 ---
 
 ### ✨ Aperçu de l'Application
-<img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/dc8c3965-2fbd-45f7-8c7d-2384e7b6ede2" />
+<img width="1914" height="987" alt="image" src="https://github.com/user-attachments/assets/714f0fd9-07e2-4cb0-b60d-75571e2dbbdd" />
+
 
 
 ## 📊 Fonctionnalités Principales
