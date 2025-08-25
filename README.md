@@ -1,6 +1,6 @@
 # 🚀 Insight Receipts - Gestionnaire de Factures Open Source
 
-![Licence MIT](https://img.shields.io/badge/Licence-MIT-blue.svg) ![GitHub Stars](https://img.shields.io/github/stars/juliengrrb/insight-receipts-opensource?style=social)
+![GitHub Stars](https://img.shields.io/github/stars/juliengrrb/insight-receipts-opensource?style=social)
 
 Bienvenue sur **Insight Receipts**, une application web conçue pour simplifier l'upload, l'analyse et la gestion de vos factures. Ce projet est entièrement open-source : prenez-le, modifiez-le et adaptez-le à vos propres besoins !
 
